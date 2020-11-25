@@ -7,6 +7,15 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: 2020
+  thymeleaf:
+    prefix:
+         classpath: /templates/
+  #静态资源访问路径：用于告诉Spring Boot应该在何处查找静态资源文件,查找文件时会依赖于配置的先后顺序依次进行
+  mvc:
+    static-path-pattern: /static/**
+
+
+
 
 mybatis:
   mapper-locations: classpath:mapping/*.xml
@@ -18,3 +27,4 @@ logging:
     com:
       example:
         mapper : debug
+
