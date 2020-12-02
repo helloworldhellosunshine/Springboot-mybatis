@@ -18,6 +18,7 @@ public class UserServiceImpl implements UserService {
       return userMapper.find(id);
     }
 
+
     @Override
     public int Insert(User user) {
         return userMapper.Insert(user);
